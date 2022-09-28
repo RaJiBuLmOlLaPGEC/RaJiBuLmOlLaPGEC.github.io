@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajibul Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/9e64959ea1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>R</span>ajibul.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#skills">My Skills</a> </li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <li><a href="images/Rajibul_Molla_Resume.pdf">Resume</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Back-end Developer</p>
+                <h1>Hi, I'm  <span>Rajibul</span> Molla.<br>i like to code.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background.jpg" alt="" > <!-- need to change-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Rajibul Molla and I am a Fullstack Developer from <span style="color: #ff004f;">Masai School, Bengaluru</span>.
+                        I am a highly passionate <span style="color: #ff004f;">developer who loves</span> developer who loves, creating APIs, and working with databases,Like to solve Data Structure and
+                        Algorithms problems.I am also extremely interested in creating elegant solutions, more specifically on <span style="color: #ff004f;">System Design and High performaning solutions</span>System Design and High performaning solutions.
+                        </p>
+                        <p>You can reach out to me on my contact page</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Projects</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Java</span><br>Basic java application Development</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Data Structure And Algorithms</span><br>Love to solve Dsa problems.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> <a href="https://velvety-caramel-a7e16b.netlify.app/">Food App</a></span><br>Kfc clone site</li>
+                                <li><span> <a href="https://rad-tartufo-63f209.netlify.app/">e-commerce</a></span><br>clone of geekbuying.com</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-Current</span><br>Full Stack Development Course at Masai School.</li>
+                                <li><span>2017-2021</span><br>B.Tech from Purulia Govt. Engg. College.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------My skills------------->
+    <div id="skills">
+        <div class="container">
+            <i class="fa-solid fa-code"></i>
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <img src="images/Java.png">
+                </div>
+                <div>
+                    <img src="images/mysql.png" alt="">
+                </div>
+                <div>
+                    <img src="images/dbms .jpg">
+                </div>
+                <div>
+                    <img src="images/sb.png">
+                </div>
+                <div>
+                    <img src="images/html.png" alt="">
+                </div>
+                <div>
+                    <img src="images/css.png" alt="">
+                </div>
+                <div>
+                    <img src="images/js.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =----------------projects=----------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="images/kfc.webp" >
+                    <div class="layer">
+                        <h3>KFC clone App</h3>
+                        <p>KFC project created during the bootcamp. I have used food API. Features: ite Section - Users can add a favorite food, Add to Cart, Wallet Section, Checkout Page, and many more.location. It is a group project, executed in 7 days.</p>
+                        <a href="https://velvety-caramel-a7e16b.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+                        <a href="https://github.com/srbhkumar624/kfcclonewebsite"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@rajibulmolla/collaborative-project-work-66db81d6b347"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/geekbuying.com.jpg" >
+                    <div class="layer">
+                        <h3>geekbuying.com</h3>
+                        <p>Geekbuying is an electronics product brand
+                            and I made a clone of its online retail platform.. Features: ite Section - Users can add product to the cart, Payment Section, Checkout Page, and many more.location. It is a solo project, executed in 3 days.</p>
+                        <a href="https://rad-tartufo-63f209.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+                        <a href="https://github.com/RaJiBuLmOlLaPGEC/geekbuying"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@rajibulmolla/masai-project-ab8f764202a3"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rajibulmolla5@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7872106139</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rajibul-molla-719879234/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/RaJiBuLmOlLaPGEC"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.hackerrank.com/rajibulmolla5?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
+                    </div>
+                    <a href="images/Rajibul_Molla_Resume.pdf" download class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 Rajibul Molla. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemanu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemanu.style.right="0";
+        }
+        function closemenu(){
+            sidemanu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwgwuIBkT8Lqw2Y8n07L2s15MEVUkUZMpfPL-dmGW-oIi1JhrJAxV5SDS7_B436Aelc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
