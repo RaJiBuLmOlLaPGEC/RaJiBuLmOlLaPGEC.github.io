@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajibul Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/9e64959ea1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----------------- navbar------- -->
+    <div id="navbar">
+            <h1 class="logo"><span>R</span>ajibul</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#skills">My Skills</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+                <li><a href="images/fp01_192_Rajibul_Molla_Resume.pdf" target="_blank">Resume</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </div>
+    <!--------------- Header ---------->
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h3>Hello, I'm</h3>
+                <h1><span>Rajibul Molla</span></h1>
+                <h5>Java Developer <span>from India</span></h5>
+                <p>
+                    I'm always interested about cool stuff. <br />
+                    Are you minding a project? <br />
+                    Let's talk.
+                </p>
+                
+                <a href="images/fp01_192_Rajibul_Molla_Resume.pdf" download onclick="openResume()" class="btn">Resume</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ------------About Me-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/RajibulPhotoBackround.png" alt="" > <!-- need to change-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Rajibul Molla and I am a Java Backend Developer from <span style="color: #ff004f;">Masai School, Bengaluru</span>.
+                        I am a highly passionate developer who loves<span style="color: #ff004f;"> creating APIs, working with databases</span> and Like to implement Data Structure and
+                        Algorithm problem in daily life projects.
+                        </p>
+                        <p>You can reach out to me on my contact page</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Projects</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>SpringBoot,MySql</span><br>Build api's and manage with databases.</li>
+                                <li><span>Java</span><br>Basic java application Development</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Data Structure And Algorithms</span><br>Love to solve Dsa problems.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> <a href="https://drive.google.com/file/d/1JtfahLG7_VMFGIAb7890K2O8g69uyPvJ/view">Travel App</a></span><br>Trip Makers</li>
+                                <li><span> <a href="https://drive.google.com/file/d/1WjnuLfXrpX4H4eLzbHgpl_Qe6tKpmJ0z/view?usp=share_link">Store Manegement App</a></span><br>Item Zone</li>
+                                <li><span> <a href="https://velvety-caramel-a7e16b.netlify.app/">Food App</a></span><br>Kfc clone site</li>
+                                <li><span> <a href="https://rad-tartufo-63f209.netlify.app/">e-commerce</a></span><br>clone of geekbuying.com</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-Current</span><br>Full Stack Development Course at Masai School.</li>
+                                <li><span>2017-2021</span><br>B.Tech from Purulia Govt. Engg. College.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------My skills------------->
+    <div id="skills">
+        <div class="container">
+            <i class="fa-solid fa-code"></i>
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <img src="./images/java-svgrepo-com.svg">
+                </div>
+                <div>
+                    <img src="./images/spring-svgrepo-com.svg" alt="">
+                </div>
+                <div>
+                    <img src="./images/MySQL-Logo.wine.svg">
+                </div>
+                <div>
+                    <img src="./images/aws-svgrepo-com.svg">
+                </div>
+                <div>
+                    <img src="./images/hibernate-svgrepo-com.svg">
+                </div>
+                
+                <div>
+                    <img src="./images/pngwing.com.png">
+                </div>
+                
+                <div>
+                    <img src="./images/postman-icon-svgrepo-com.svg" alt="">
+                </div>
+                <div>
+                    <img src="images/dbms .jpg">
+                </div>
+                <div>
+                    <img src="./images/html-svgrepo-com.svg">
+                </div>
+                <div>
+                    <img src="./images/css3-svgrepo-com.svg">
+                </div>
+                <div>
+                    <img src="./images/js-svgrepo-com.svg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------Tools---------- -->
+    <div id="tool">
+        <div class="container">
+            <i class="fa-solid fa-code"></i>
+            <h1 class="sub-title">My Tools</h1>
+            <div class="skills-list">
+                <div>
+                    <img src="./images/sts.jfif">
+                </div>
+                <div>
+                    <img src="./images/IntelliJ_IDEA.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/github.png">
+                </div>
+                <div>
+                    <img src="./images/lombook.png">
+                </div>
+                <div>
+                    <img src="./images/swagger.png">
+                </div>
+                
+                <div>
+                    <img src="./images/Visual_Studio.png">
+                </div>
+                
+                <div>
+                    <img src="./images/postman-icon-svgrepo-com.svg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- =----------------projects=----------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="./images/sb201.png" >
+                    <div class="layer">
+                        <h3>Trip Makers</h3>
+                        <p>The backend of online trip management where the admin can log in to the system and can manage the features of the website. And the customer can also log in and perform all activities such as view routes, hotels, and packages and can also book, cancel and print ticket details and provide feedback too.</p>
+                        <a href="https://drive.google.com/file/d/1JtfahLG7_VMFGIAb7890K2O8g69uyPvJ/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live</a>
+                        <a href="https://github.com/adnan25042001/apathetic-company-9547" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h3 style="font-size: larger; color: aquamarine;">Spring Boot,Java,Jpa with Hybernet,My Sql,Postman</h3>
+                        
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/Item Zone (1).png" >
+                    <div class="layer">
+                        <h3>Item Zone</h3>
+                        <p>Item Zone is a Console base online store management application, where i used core java and My sql also done under 4 days.</p>
+                        <a href="https://drive.google.com/file/d/1WjnuLfXrpX4H4eLzbHgpl_Qe6tKpmJ0z/view?usp=share_link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live</a>
+                        <a href="https://github.com/RaJiBuLmOlLaPGEC/ItemZone" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h3 style="font-size: larger; color: aquamarine;" >Java,My Sql,Jdbc</h3>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/kfc.webp" >
+                    <div class="layer">
+                        <h3>KFC clone App</h3>
+                        <p>KFC project created during the bootcamp. I have used food API. Features: ite Section - Users can add a favorite food, Add to Cart, Wallet Section, Checkout Page, and many more.location. It is a group project, executed in 7 days.</p>
+                        <a href="https://velvety-caramel-a7e16b.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live</a>
+                        <a href="https://github.com/srbhkumar624/kfcclonewebsite" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@rajibulmolla/collaborative-project-work-66db81d6b347" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                        <h3 style="font-size: larger; color: aquamarine;" >Html,Css,JavaScript</h3>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/geekbuying.com.jpg" >
+                    <div class="layer">
+                        <h3>geekbuying.com</h3>
+                        <p>Geekbuying is an electronics product brand
+                            and I made a clone of its online retail platform.. Features: ite Section - Users can add product to the cart, Payment Section, Checkout Page, and many more.location. It is a solo project, executed in 3 days.</p>
+                        <a href="https://rad-tartufo-63f209.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live</a>
+                        <a href="https://github.com/RaJiBuLmOlLaPGEC/geekbuying" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@rajibulmolla/masai-project-ab8f764202a3" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                        <h3 style="font-size: larger; color: aquamarine;" >Html,Css,JavaScript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ githubstatics--------- -->
+    <div>
+        <div class="container">
+            <h1 class="sub-title">My-Stats :</h1>
+<p align="center">
+<a href="https://github.com/RaJiBuLmOlLaPGEC"><img src="https://github-readme-stats.vercel.app/api?username=RaJiBuLmOlLaPGEC&theme=radical&show_icons=true&hide=&count_private=true&hide_border=true&show_icons=true" alt="RaJiBuLmOlLaPGEC's GitHub stats" /></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/RaJiBuLmOlLaPGEC"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaJiBuLmOlLaPGEC&theme=radical&show_icons=true&hide=&count_private=true&hide_border=true&show_icons=true" alt="RaJiBuLmOlLaPGEC's GitHub stats" /></a>
+</p>
+
+<!-- [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=RaJiBuLmOlLaPGEC&count_private=true&theme=tokyonight&showicons=true)]()
+[![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=RaJiBuLmOlLaPGEC&langs_count=5&theme=tokyonight)]() -->
+
+<h2 align='center'><i><a href="https://github.com/RaJiBuLmOlLaPGEC/github-readme-activity-graph">Activity Graph 📈</i></h2>
+<p align="center">
+<a href="https://github.com/ARaJiBuLmOlLaPGEC/github-readme-activity-graph#gh-light-mode-only">
+ <img src="https://github-readme-activity-graph.cyclic.app/graph?username=RaJiBuLmOlLaPGEC&theme=react&area=true&hide_border=true#gh-light-mode-only" width="100%">
+</a>
+<!-- <a href="https://github.com/RaJiBuLmOlLaPGEC/github-readme-activity-graph#gh-dark-mode-only">
+ <img src="https://github-readme-activity-graph.cyclic.app/graph?username=RaJiBuLmOlLaPGEC&theme=dracula&area=true&hide_border=true#gh-dark-mode-only" width="100%">
+</a> -->
+</p>
+        </div>
+        
+     </div>
+     
+    <!-- ----------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rajibulmolla5@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7872106139</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rajibul-molla-719879234/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/RaJiBuLmOlLaPGEC"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.hackerrank.com/rajibulmolla5?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
+                    </div>
+                    <a href="images/Rajibul_Molla_Resume.pdf" download class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Rajibul Molla. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemanu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemanu.style.right="0";
+        }
+        function closemenu(){
+            sidemanu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwgwuIBkT8Lqw2Y8n07L2s15MEVUkUZMpfPL-dmGW-oIi1JhrJAxV5SDS7_B436Aelc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+        function openResume(){
+            window.open("https://drive.google.com/file/d/18b2s-c2CZz98XB-Wns2bF_sJ6Bk8veXt/view?usp=share_link");
+        }
+      </script>
+      
+</body>
+</html>
+
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+<div class="calendar" style="width: 80%; margin: auto;">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+</div>
+
+<script>
+    GitHubCalendar(".calendar", "RaJiBuLmOlLaPGEC");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "RaJiBuLmOlLaPGEC", { responsive: true });
+</script>
